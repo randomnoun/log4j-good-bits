@@ -35,7 +35,7 @@ is now
 ```
 <dependency>
   <groupId>com.randomnoun.log4j</groupId>
-  <artifactId>log4j</artifactId>
+  <artifactId>log4j-good-bits</artifactId>
   <version>1.2.17-1</version>
 </dependency>  
 ```  
