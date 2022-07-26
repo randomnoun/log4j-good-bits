@@ -77,10 +77,13 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/logging/log4j/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/logging/log4j/trunk</developerConnection>
-    <url>http://svn.apache.org/viewvc/logging/log4j/trunk</url>
+        <connection>scm:git:http://gitlab.dev.randomnoun/randomnoun/log4j-good-bits.git</connection>
+        <developerConnection>scm:git:http://gitlab.dev.randomnoun/randomnoun/log4j-good-bits.git</developerConnection>
+        <url>http://gitlab.dev.randomnoun/randomnoun/log4j-good-bits</url>
+      <tag>HEAD</tag>
   </scm>
+
+
   <organization>
     <name>Apache Software Foundation</name>
     <url>http://www.apache.org</url>
@@ -584,15 +587,20 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
       <optional>true</optional>
     </dependency>
   </dependencies>
+  
   <distributionManagement>
-    <repository>
-      <id>logging.repo</id>
-      <url>scp://people.apache.org/www/people.apache.org/builds/logging/repo/</url>
-    </repository>
-    <site>
-      <id>logging.site</id>
-      <url>scp://localhost/${user.dir}/target/site-deploy</url>
-    </site>
-  </distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>randomnoun releases</name>
+            <url>http://nexus2.dev.randomnoun/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>randomnoun snapshots</name>
+            <url>http://nexus2.dev.randomnoun/nexus/content/repositories/snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+    
 </project>
 
