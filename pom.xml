@@ -32,7 +32,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
   <artifactId>log4j</artifactId><!-- was log4j -->
   <packaging>bundle</packaging>
   <name>Apache Log4j</name>
-  <version>1.2.17-2-SNAPSHOT</version><!-- was 1.2.18-SNAPSHOT -->
+  <version>1.2.17-2</version><!-- was 1.2.18-SNAPSHOT -->
   <description>Apache Log4j 1.2</description>
   <url>http://logging.apache.org/log4j/1.2/</url>
   <issueManagement>
@@ -79,7 +79,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
         <connection>scm:git:http://gitlab.dev.randomnoun/randomnoun/log4j-good-bits.git</connection>
         <developerConnection>scm:git:http://gitlab.dev.randomnoun/randomnoun/log4j-good-bits.git</developerConnection>
         <url>http://gitlab.dev.randomnoun/randomnoun/log4j-good-bits</url>
-      <tag>log4j-1.2.17-1</tag>
+      <tag>log4j-1.2.17-2</tag>
   </scm>
 
 
