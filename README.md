@@ -5,7 +5,7 @@
 
 **log4j-good-bits** are the bits of log4j 1.2.17 that aren't currently raising CVEs
 
-As at 2022-07-07, this bits excluded are:
+As at 2022-07-07, the bits excluded are:
 
 * SocketServer
 * SMTPAppender
@@ -61,7 +61,7 @@ mkdir log4j
 cd log4j
 
 # this mostly appears to work, but fails towards the end with the message
-# 'command failed: git checkout "BRNACH_1_3_ABANDONED'
+# 'command failed: git checkout "BRANCH_1_3_ABANDONED'
 svn2git http://svn.apache.org/repos/asf/logging/log4j
 
 # create missing tags and branches, from https://stackoverflow.com/a/45056412
