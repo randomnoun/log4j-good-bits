@@ -49,7 +49,7 @@ public class CoreTestSuite {
         s.addTestSuite(org.apache.log4j.spi.ThrowableInformationTest.class);
         s.addTestSuite(org.apache.log4j.spi.LocationInfoTest.class);
         s.addTestSuite(org.apache.log4j.PropertyConfiguratorTest.class);
-        s.addTestSuite(org.apache.log4j.net.SMTPAppenderTest.class);
+        // s.addTestSuite(org.apache.log4j.net.SMTPAppenderTest.class);
         s.addTestSuite(org.apache.log4j.net.TelnetAppenderTest.class);
         s.addTestSuite(org.apache.log4j.DefaultThrowableRendererTest.class);
         s.addTestSuite(org.apache.log4j.EnhancedThrowableRendererTest.class);
