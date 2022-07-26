@@ -32,7 +32,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
   <artifactId>log4j</artifactId><!-- was log4j -->
   <packaging>bundle</packaging>
   <name>Apache Log4j</name>
-  <version>1.2.17-2-SNAPSHOT</version><!-- was 1.2.18-SNAPSHOT -->
+  <version>1.2.17-1-SNAPSHOT</version><!-- was 1.2.18-SNAPSHOT -->
   <description>Apache Log4j 1.2</description>
   <url>http://logging.apache.org/log4j/1.2/</url>
   <issueManagement>
@@ -375,13 +375,23 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
 
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.7</version>
+        <version>3.2.0</version>
+        <!-- 
+          this configuration is used during the javadoc:jar goal during the release
+          configuration for the reports is in the <reporting> section  
+        -->
         <configuration>
-          <docfilessubdirs>true</docfilessubdirs>
-          <excludedocfilessubdir>.svn</excludedocfilessubdir>
-          <encoding>UTF-8</encoding>
-          <docEncoding>UTF-8</docEncoding>
+            <additionalparam>-Xdoclint:none</additionalparam>
+            <failOnError>false</failOnError>
+            <javadocDirectory>${project.basedir}/src/main/javadoc</javadocDirectory>
+            <docfilessubdirs>true</docfilessubdirs>
+            <excludedocfilessubdir>.svn</excludedocfilessubdir>
+            <encoding>UTF-8</encoding>
+            <docEncoding>UTF-8</docEncoding>
+            <author>true</author>
+            <linksource>true</linksource>
         </configuration>
         <executions>
           <execution>
@@ -398,7 +408,8 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
             </goals>
           </execution>
         </executions>
-      </plugin>
+    </plugin>
+                
       <!--
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
