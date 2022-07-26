@@ -40,6 +40,13 @@ is now
 </dependency>  
 ```  
 
+## What else has changed ?
+
+* Renamed the source files with CVEs (and their test sources) from "xxx.java" to "xxx.nocompile"
+* Bumped the maven-compiler-plugin source and target versions to 1.6
+* Removed the sun.jdk:tools dependency on the ant-run plugin
+
+
 ## So does this repository have all the tags and branches of the original svn repository ?
 
 Hopefully. Here's the process I used to convert the original repository:
