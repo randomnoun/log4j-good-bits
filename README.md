@@ -42,7 +42,7 @@ is now
 
 ## What else has changed ?
 
-* Renamed the source files with CVEs (and their test sources) from "xxx.java" to "xxx.nocompile"
+* Renamed the source files with CVEs (and their test sources) from "xxxx.java" to "xxxx.nocompile"
 * Bumped the maven-compiler-plugin source and target versions to 1.6
 * Modified the scm and distributionManagement sections in the pom.xml
 * Removed the sun.jdk:tools dependency on the ant-run plugin
