@@ -45,8 +45,10 @@ is now
 * Renamed the source files with CVEs (and their test sources) from "xxxx.java" to "xxxx.nocompile"
 * Bumped the maven-compiler-plugin source and target versions to 1.6
 * Modified the scm and distributionManagement sections in the pom.xml
+* Updated the maven-javadoc-plugin section
 * Removed the sun.jdk:tools dependency on the ant-run plugin
 * Removed the maven-release-plugin section
+* Removed the maven site sections
 
 
 ## So does this repository have all the tags and branches of the original svn repository ?

@@ -250,6 +250,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
           </execution>
           -->
           <!-- release builds will put SVN tags into the SCM page, this changes it back to trunk -->
+          <!--
           <execution>
             <phase>site</phase>
             <id>untag-site</id>
@@ -266,6 +267,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
               <goal>run</goal>
             </goals>
           </execution>
+          -->
 
             <!--
 
@@ -400,6 +402,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
               <goal>javadoc</goal>
             </goals>
           </execution>
+          <!--          
           <execution>
             <id>site</id>
             <phase>pre-site</phase>
@@ -407,6 +410,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
               <goal>javadoc</goal>
             </goals>
           </execution>
+          -->
         </executions>
     </plugin>
                 
@@ -473,6 +477,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
                 </instructions>
             </configuration>
         </plugin>
+        <!--
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.1</version>
@@ -485,6 +490,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
           </execution>
         </executions>
       </plugin>
+      -->
     </plugins>
     <testSourceDirectory>tests/src/java</testSourceDirectory>
     <testResources>
