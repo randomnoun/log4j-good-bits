@@ -46,6 +46,7 @@ is now
 * Bumped the maven-compiler-plugin source and target versions to 1.6
 * Modified the scm and distributionManagement sections in the pom.xml
 * Removed the sun.jdk:tools dependency on the ant-run plugin
+* Removed the maven-release-plugin section
 
 
 ## So does this repository have all the tags and branches of the original svn repository ?
