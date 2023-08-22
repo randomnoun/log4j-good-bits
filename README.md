@@ -50,6 +50,7 @@ is now
 * Removed the maven-release-plugin section
 * Removed the maven site sections
 
+Here's a diff: [https://github.com/randomnoun/log4j-good-bits/compare/master-from-svn-conversion...master](https://github.com/randomnoun/log4j-good-bits/compare/master-from-svn-conversion...master)
 
 ## So does this repository have all the tags and branches of the original svn repository ?
 
