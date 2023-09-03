@@ -1,3 +1,4 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.randomnoun.log4j/log4j-good-bits.svg)](https://search.maven.org/artifact/com.randomnoun.log4j/log4j-good-bits)
 
 # log4j-good-bits
 
