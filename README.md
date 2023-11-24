@@ -44,12 +44,14 @@ is now
 ## What else has changed ?
 
 * Renamed the source files with CVEs (and their test sources) from "xxxx.java" to "xxxx.nocompile"
-* Bumped the maven-compiler-plugin source and target versions to 1.6
-* Modified the scm and distributionManagement sections in the pom.xml
-* Updated the maven-javadoc-plugin section
-* Removed the sun.jdk:tools dependency on the ant-run plugin
-* Removed the maven-release-plugin section
-* Removed the maven site sections
+* Methods in LoggingEvent are no longer final
+* Updated the build
+    * Bumped the maven-compiler-plugin source and target versions to 1.6
+    * Modified the scm and distributionManagement sections in the pom.xml
+    * Updated the maven-javadoc-plugin section
+    * Removed the sun.jdk:tools dependency on the ant-run plugin
+    * Removed the maven-release-plugin section
+    * Removed the maven site sections
 
 Here's a diff: [https://github.com/randomnoun/log4j-good-bits/compare/master-from-svn-conversion...master](https://github.com/randomnoun/log4j-good-bits/compare/master-from-svn-conversion...master)
 

@@ -144,6 +144,7 @@ public class LoggingEvent implements java.io.Serializable {
   static final Class[] TO_LEVEL_PARAMS = new Class[] {int.class};
   static final Hashtable methodCache = new Hashtable(3); // use a tiny table
 
+  
   /**
      Instantiate a LoggingEvent from the supplied parameters.
 
@@ -522,7 +523,7 @@ public class LoggingEvent implements java.io.Serializable {
      * @param propName
      * @param propValue
      */
-  public final void setProperty(final String propName,
+  public void setProperty(final String propName,
                           final String propValue) {
         if (mdcCopy == null) {
             getMDCCopy();
@@ -543,7 +544,7 @@ public class LoggingEvent implements java.io.Serializable {
      * @return property value or null if property not set
      * @since 1.2.15
      */
-    public final String getProperty(final String key) {
+    public String getProperty(final String key) {
         Object value = getMDC(key);
         String retval = null;
         if (value != null) {
@@ -558,7 +559,7 @@ public class LoggingEvent implements java.io.Serializable {
      * @return true if location information has been extracted.
      * @since 1.2.15
      */
-    public final boolean locationInformationExists() {
+    public boolean locationInformationExists() {
       return (locationInfo != null);
     }
 
@@ -569,7 +570,7 @@ public class LoggingEvent implements java.io.Serializable {
      *
      * @since 1.2.15
      */
-    public final long getTimeStamp() {
+    public long getTimeStamp() {
       return timeStamp;
     }
 
