@@ -1,5 +1,15 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.randomnoun.log4j/log4j-good-bits.svg)](https://search.maven.org/artifact/com.randomnoun.log4j/log4j-good-bits)
 
+## You probably want reload4j instead
+
+OK, so it turns out that [https://reload4j.qos.ch/](reload4j) exists, and has the same goals as this project.
+
+It looks like that project will be maintained more than this one, and rather than just dropping the CVE-raising classes, they're fixing them instead. 
+
+So why not use that.
+
+------
+
 # log4j-good-bits
 
 ## Overview
