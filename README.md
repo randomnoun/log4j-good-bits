@@ -2,7 +2,7 @@
 
 ## You probably want reload4j instead
 
-OK, so it turns out that [https://reload4j.qos.ch/](reload4j) exists, and has the same goals as this project.
+OK, so it turns out that [reload4j](https://reload4j.qos.ch/) exists, and has the same goals as this project.
 
 It looks like that project will be maintained more than this one, and rather than just dropping the CVE-raising classes, they're fixing them instead. 
 
